@@ -7,6 +7,7 @@ padding: 0;
 body {
     font-family: 'DotGothic16', sans-serif;
 }
+
 #navbar {
     display: flex;
     background: rgb(97, 41, 41);
@@ -63,8 +64,62 @@ body {
 
 .shop-div {
     display: grid;
-    grid: auto auto auto;
-    border-top: 3px solid black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: -10%;
+}
+
+.shop-item {
     width: 100%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shop-item-img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    padding: 20px 10px 5px 55px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+
+}
+
+.item-description {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 15px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid black;
+    width: 80%;
+    height: 90%;
+}
+
+.cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
