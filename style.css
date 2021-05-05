@@ -6,11 +6,16 @@ padding: 0;
 
 body {
     font-family: 'DotGothic16', sans-serif;
+    display: flex;
 }
 
 #navbar {
+    margin-top 0vh;
     display: flex;
     background: rgb(97, 41, 41);
+    position: fixed;
+    width: 100%;
+    height: 10%;
 }
 
 #title {
@@ -59,7 +64,10 @@ body {
 #shop-main {
     background: rgb(228, 216, 216);
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10vh;
 }
 
 .shop-div {
@@ -67,9 +75,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 80%;
-    height: 100%;
+    height: 100vh;
     margin-left: 10%;
     margin-right: -10%;
+    
 }
 
 .shop-item {
@@ -78,6 +87,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 10%;
 }
 
 .shop-item-img {
@@ -85,7 +95,7 @@ body {
     width: 200px;
     height: 200px;
     margin: 0px;
-    padding: 20px 10px 5px 55px;
+    padding: 0px 10px 5px 10px;
     justify-content: center;
     align-items: center;
     flex-direction: center;
@@ -97,7 +107,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-padding: 15px;
+padding-bottom: 25px;
+color:rgb(97, 41, 41);
 }
 
 p {
@@ -105,21 +116,31 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color:rgb(97, 41, 41);
 }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
     width: 80%;
-    height: 90%;
+    height: 100%;;
+    box-shadow: 5px 5px;
+    line-height: .5rem;
+}
+.container:hover {
+    box-shadow: 3px 3px;
 }
 
 .cart-btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin: 0 auto;
     padding: 10px;
-    margin-bottom: 5px;
     margin-top: 10px;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: rgb(97, 41, 41);
+    color:rgb(228, 216, 216);
+    cursor: pointer;
 }
